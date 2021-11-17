@@ -36,7 +36,7 @@ public class UsuariosController {
 	}
 	
 	@DeleteMapping("/deleteUsuario/{id}")
-	public String deleteBook(@PathVariable int id) {
+	public String deleteUser(@PathVariable int id) {
 		repository.deleteById(id);
 		return "Libro eliminado con exito" + id;
 	}
